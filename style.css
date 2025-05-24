@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #181825;
+  overflow-x: hidden;
+}
+
+.sized {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c2b;
+  padding: 20px;
+  background-image: url("/assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: 25px 25px;
+  background-size: 100px;
+}
+
+#viewer {
+  border: none;
+  height: 100%;
+  width: 414px;
+  transition: width 0.7s ease;
+  border: 1px solid #181825;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.toolbar {
+  display: flex;
+  width: 100%;
+  background-color: #181825;
+  height: 70px;
+}
+
+.toolbar input {
+  background-color: transparent;
+  color: rgb(232, 230, 227);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M9.208 12.346c-.485 1-.953 1.154-1.208 1.154s-.723-.154-1.208-1.154c-.372-.768-.647-1.858-.749-3.187a21 21 0 0 0 3.914 0c-.102 1.329-.377 2.419-.75 3.187m.788-4.699C9.358 7.714 8.69 7.75 8 7.75s-1.358-.036-1.996-.103c.037-1.696.343-3.075.788-3.993C7.277 2.654 7.745 2.5 8 2.5s.723.154 1.208 1.154c.445.918.75 2.297.788 3.993m1.478 1.306c-.085 1.516-.375 2.848-.836 3.874a5.5 5.5 0 0 0 2.843-4.364c-.621.199-1.295.364-2.007.49m1.918-2.043c-.572.204-1.21.379-1.901.514c-.056-1.671-.354-3.14-.853-4.251a5.5 5.5 0 0 1 2.754 3.737m-8.883.514c.056-1.671.354-3.14.853-4.251A5.5 5.5 0 0 0 2.608 6.91c.572.204 1.21.379 1.901.514M2.52 8.463a5.5 5.5 0 0 0 2.843 4.364c-.46-1.026-.75-2.358-.836-3.874a15.5 15.5 0 0 1-2.007-.49M15 8A7 7 0 1 0 1 8a7 7 0 0 0 14 0' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 15px center;
+  padding-left: 54px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-family: "DM Mono", monospace;
+}
+
+.toolbar .viewports {
+  display: flex;
+  gap: 15px;
+  margin-right: 15px;
+}
+
+.toolbar button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.3s, opacity 0.3s, color 0.3s;
+}
+.toolbar button:hover {
+  transform: scale(1.2);
+  color: var(--color);
+}
+.toolbar button:active {
+  opacity: 0.4;
+}
+footer {
+  color: rgba(232, 230, 227, 0.8);
+  width: 100%;
+  background-color: #181825;
+  padding: 0px 20px;
+  font-family: "DM Mono", monospace;
+  font-size: 14px;
+  border-top: 1px solid #1c1c2b;
+}
+
+footer p {
+  max-width: 500px;
+  margin: 30px auto;
+  line-height: 1.5;
+}
+
+footer a {
+  color: rgba(232, 230, 227, 0.95);
+}
+.main-learn-more {
+  background-color: #1c1c2b;
+  padding: 20px;
+  background-image: url("/assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: 25px 25px;
+  background-size: 100px;
+}
+.main-learn-more-content {
+  max-width: 700px;
+  margin: 3em auto;
+  width: 100%;
+  font-family: "DM Mono", monospace;
+  height: 100%;
+}
+.main-learn-more-content a {
+  font-weight: 500;
+  color: white;
+}

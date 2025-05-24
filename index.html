@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/assets/icon.svg" />
+    <title>Sized</title>
+
+    <meta name="title" content="Sized" />
+    <meta
+      name="description"
+      content="Sized is a simple tool to test how websites will look on different devices!"
+    />
+    <meta name="keywords" content="tools,dev" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="MilesWK and Tiago Rangel" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body data-disable-widget="true">
+    <div class="sized">
+      <div class="main">
+        <iframe src="https://example.com/" class="device-iframe" id="viewer">
+          <b style="color: red"
+            >Your browser doesn't support iframes. Please switch to a more
+            modern browser like Chrome, Firefox, Brave, Edge, or Arc.</b
+          >
+        </iframe>
+      </div>
+      <div class="toolbar">
+        <input value="https://example.com" placeholder="https://example.com" />
+        <div class="viewports">
+          <button data-viewport="414px" style="--color: #f38ba8" title="Phone">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewbox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M7 12a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zM5.75 1A1.75 1.75 0 0 0 4 2.75v10.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0 0 12 13.25V2.75A1.75 1.75 0 0 0 10.25 1zM5 2.75A.75.75 0 0 1 5.75 2h4.5a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75z"
+              />
+            </svg>
+          </button>
+          <button data-viewport="850px" style="--color: #a6e3a1" title="Tablet">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M6.5 10a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM2.75 3A1.75 1.75 0 0 0 1 4.75v6.5c0 .966.784 1.75 1.75 1.75h10.5A1.75 1.75 0 0 0 15 11.25v-6.5A1.75 1.75 0 0 0 13.25 3zM2 4.75A.75.75 0 0 1 2.75 4h10.5a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-.75.75H2.75a.75.75 0 0 1-.75-.75z"
+              />
+            </svg>
+          </button>
+          <button data-viewport="100%" style="--color: #89b4fa" title="Desktop">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M4.5 4A1.5 1.5 0 0 0 3 5.5v4A1.5 1.5 0 0 0 4.5 11h7A1.5 1.5 0 0 0 13 9.5v-4A1.5 1.5 0 0 0 11.5 4zM4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zM2.5 12a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Made by
+        <a href="https://mileswk.glitch.me/" rel="follow" target="_blank"
+          >MilesWK ↗</a
+        ><br />Design by
+        <a href="https://tiagorangel.com" rel="follow" target="_blank"
+          >Tiago Rangel ↗</a
+        ><br /><a
+          href="/learn-more.html"
+          target="_blank"
+          >Learn more</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
